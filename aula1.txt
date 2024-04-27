@@ -1,0 +1,54 @@
+SCRIPTS:
+ COMANDO PARA RODAR O PYTHON:
+ HABILITA POLITICAS PARA PERMITIR RODAR, TEM PC QUE NÃO PRECISA DESTE CODIGO:
+ /> Set-ExecutionPolicy Unrestricted -Scope Process
+ 
+ HABILITA MAQUINA VIRTUAL:
+ /> venv\Scripts\activate 
+ 
+ /> EXEC PROGRAMA
+ python manage.py runserver
+
+/>VETIFICA A DEPENDENCIA INSTALADA:
+ pip freeze
+ 
+                    BD:
+ DETECTA ALTERAÇÕES NO MODEL PARA ALTERAR BD:
+ /> python manage.py makemigrate
+
+ EXECUTA ALTERAÇÃO NO BD DE ACORDO COM O MODEL
+ /> python manage.py makemigrations
+
+Criando super admin:
+/> python manage.py createsuperuser
+
+
+projeto python com api rest e deploy
+1 - Precisa rodar os requiriments para instalar as dependencias
+2 - Precisa definir o python, selecionar onde ele vai rodar:
+    execute ctlr+shift+P para abrir p comander do vs code, e digite:
+     - python select interpreter
+     Selecione o python da venv
+
+3 - pip freeze 
+mostra os modulos instalados
+
+4 - validate-docbr
+pacote onde podemos validar os documentos brasileiros
+/> pip install validate-docbr
+
+5 - faker djando
+É uma lib onde podemos inserir dentro de nosso projeto e podemos inserir no caso pessoas fake
+/> pip install Faker
+no terminal devemos digitar dentro da venv:
+/> python populate_script.py
+
+
+6 - Local onde pode ser inserido funcionalidades como o filtro no django:
+link da lib: https://www.django-rest-framework.org/api-guide/filtering/
+
+    no settings você deve inserir em apps instalados: 
+    'django_filter'
+
+    no terminal você vai instalar dentro da venv:
+    pip install django-filter
