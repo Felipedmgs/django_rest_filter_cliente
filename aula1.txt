@@ -6,11 +6,13 @@ SCRIPTS:
  HABILITA MAQUINA VIRTUAL:
  /> venv\Scripts\activate 
  
- /> EXEC PROGRAMA
- python manage.py runserver
+ EXEC PROGRAMA
+/> python manage.py runserver
 
-/>VETIFICA A DEPENDENCIA INSTALADA:
- pip freeze
+VETIFICA A DEPENDENCIA INSTALADA:
+ /> pip freeze
+ATUALIZA O ARQUIVO COM TODAS AS DEPENDENCIAS:
+ /> pip freeze > .\requirements.txt
  
                     BD:
  DETECTA ALTERAÇÕES NO MODEL PARA ALTERAR BD:
