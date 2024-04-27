@@ -1,0 +1,20 @@
+Aqui esta um pouco de instruções sobre a utilização da AWS
+
+Depois de finalizado nossa api vamos inserir ela na AWS
+1 - Criar uma nova branch no git com o nome de deploy
+2 - dentro de settings..
+
+
+
+Dentro do AWS
+0 - Para deixar o AWS rodar a app em background:
+/> screen -S nome_da_pasta Ex. projeto_cliente_api_rest
+
+1 - Ativar venv:
+/> source vencv/bin/activate
+
+2 - Rodar python:
+/> python manage.py runserver 0.0.0.0:8000
+
+
+
